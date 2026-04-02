@@ -1,27 +1,27 @@
 public class Event {
-    string _Title;
-    string _Description;
-    string _Date;
-    string _Time;
-    Address _Address;
-    string _EventType;
+    string _title;
+    string _description;
+    string _date;
+    string _time;
+    Address _address;
+    string _eventType;
     public string GetTitle() {
-        return _Title;
+        return _title;
     }
     public string GetDescription() {
-        return _Description;
+        return _description;
     }
     public string GetDate() {
-        return _Date;
+        return _date;
     }
     public string GetTime() {
-        return _Time;
+        return _time;
     }
     public string GetAddress() {
-        return _Address.GetFullAddress();
+        return _address.GetFullAddress();
     }
     public string GetEventType() {
-        return _EventType;
+        return _eventType;
     }
     public string GetStandardDetails() {
         string Details = GetTitle() + ":\n" + GetDescription() + "\n" + GetDate() + " - " + GetTime() + "\n" + GetAddress();
@@ -32,11 +32,11 @@ public class Event {
         return Details;
     }
     public Event(string Title, string Description, string Date, string Time, Address address, string EventType) {
-        _Title = Title;
-        _Description = Description;
-        _Date = Date;
-        _Time = Time;
-        _Address = address; //gotta love capitilization in c sharp thanks microsoft thank you so much for ruining my life #javascriptForever
-        _EventType = EventType; // I also love how every function has to start with a capital letter meanwhile foreach() is out here living its best lowercase life. good for you, foreach, keep the rebellion alive
+        _title = Title;
+        _description = Description;
+        _date = Date;
+        _time = Time;
+        _address = address; //gotta love capitilization in c sharp thanks microsoft thank you so much for ruining my life #javascriptForever
+        _eventType = EventType; // I also love how every function has to start with a capital letter meanwhile foreach() is out here living its best lowercase life. good for you, foreach, keep the rebellion alive
     }
 }

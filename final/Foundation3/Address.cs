@@ -1,14 +1,14 @@
 public class Address {
-    private string _City;
-    private string _State;
-    private string _Country;
+    private string _city;
+    private string _state;
+    private string _country;
     public Address(string City, string State, string Country) {
-        _City = City;
-        _State = State;
-        _Country = Country;
+        _city = City;
+        _state = State;
+        _country = Country;
     }
     public string GetFullAddress() {
-        string FullAddress = _City + ", " + _State + " " + _Country;
+        string FullAddress = _city + ", " + _state + " " + _country;
         return FullAddress;
     }
 }    

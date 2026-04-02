@@ -1,24 +1,24 @@
 public class Product {
-    string _Name;
-    string _ProductId;
-    decimal _PricePerUnit;
-    decimal _Quantity;
+    string _name;
+    string _productId;
+    decimal _pricePerUnit;
+    decimal _quantity;
     public Product(string Name, string ProductId, decimal PricePerUnit, decimal Quantity) {
-        _Name = Name;
-        _ProductId = ProductId;
-        _PricePerUnit = PricePerUnit;
-        _Quantity = Quantity;
+        _name = Name;
+        _productId = ProductId;
+        _pricePerUnit = PricePerUnit;
+        _quantity = Quantity;
 
     }
     public decimal GetTotalPrice()
     {
-        decimal TotalPrice = _Quantity * _PricePerUnit;
+        decimal TotalPrice = _quantity * _pricePerUnit;
         return TotalPrice;
     }
     public string GetName() {
-        return _Name;
+        return _name;
     }
     public string GetProductId() {
-        return _ProductId;
+        return _productId;
     }
 }

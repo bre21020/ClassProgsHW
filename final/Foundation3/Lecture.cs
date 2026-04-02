@@ -1,16 +1,16 @@
 public class Lecture : Event {
-    string _SpeakerName;
-    int _Capacity;
+    string _speakerName;
+    int _capacity;
     public string GetSpeakerName() {
-        return _SpeakerName;
+        return _speakerName;
     }
     public int GetCapacity() {
-        return _Capacity;
+        return _capacity;
     }
     public Lecture(string Title, string Description, string Date, string Time, Address address, string EventType, string SpeakerName, int Capacity) 
         : base(Title, Description, Date, Time, address, EventType) {
-            _SpeakerName = SpeakerName;
-            _Capacity = Capacity;
+            _speakerName = SpeakerName;
+            _capacity = Capacity;
     }
     public string GetFullDetails() {
         string Details = GetTitle() + ":\n" + GetDescription() + "\n" + GetDate() + " - " + GetTime() + "\n" + GetAddress() + "\n" + GetEventType() + " - " + GetSpeakerName() + "\nCapacity: " + GetCapacity();
